@@ -1,0 +1,269 @@
+:root {
+    --primary: rgb(0, 0, 0);
+    --bg: #ffffff;
+    --secondary: #dbdbdb;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none ;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'kanit';
+    background-color: var(--bg);
+    /* min-height: 5000px; */
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar section */
+.navbar1 {
+    text-align: center;
+    background-color: var(--bg);
+    z-index: 9999;
+    position: fixed;
+}
+
+.navbar1 .navbar-header a {
+    color: var(--primary);
+    padding: 1.4rem;
+
+}
+
+.navbar2 {
+    align-items: center;
+    background-color: var(--secondary);
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(32, 32, 32, 0.5);
+    z-index: 9999;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar2 .navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    
+    
+}
+
+.navbar2 .navbar-nav a {
+    color: var(--primary);
+}
+
+.navbar2 .navbar-nav .navbar-nav-main a{
+    margin: 0 3rem;
+}
+
+.navbar2 .navbar-nav .navbar-nav-main a:hover {
+    color: var(--bg);
+}
+
+.navbar2 .navbar-nav .navbar-nav-extra a:hover {
+    color: var(--bg);
+}
+/* hero section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('img/gym-backg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero h1{
+    /* display: flex; */
+    text-align: center;
+    color: var(--bg);
+    font-size: 5rem;
+    padding: 0 10rem;
+    
+}
+.hero h1 span{
+    color:var(--secondary);
+}
+
+.hero p{
+    text-align: left;
+    margin-right: 10rem;
+    color: var(--bg);
+    font-size: 1.1rem;
+}
+
+/* About section */
+.about {
+    padding: 8rem 4% 1.4rem;
+    /* border-bottom: 0.3px solid #acacac; */
+    padding-bottom: 9rem;
+}
+.about h1, .about p{
+    color: var(--primary);
+    text-align: center;
+    padding-bottom: 0.8rem;
+}
+
+.about .container {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.about .image {
+    align-items: center;
+}
+.about .image img{
+    display: block;
+    width: 900px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(32, 32, 32, 0.5);
+    /* padding-bottom: 10rem; */
+    
+}
+
+/* Fasilitas Section */
+.fasilitas {
+    padding-top: 8rem;
+}
+.fasilitas h1 {
+    text-align: center;
+}
+.fasilitas .row{
+    display: flex;
+}
+
+.fasilitas .container-gym h3 {
+    padding-top: 2rem;
+    margin-left: 36.5rem;
+}
+
+.fasilitas .container-gym .row .fas-img img {
+    width: 720px;
+    height: 480px;
+    margin-left: 15rem;
+    box-shadow: 1px 1px 3px rgba(32, 32, 32, 0.5);
+}
+
+.fasilitas .container-gym .row .container-fas-gym {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 2.5rem;
+    margin-right: 3rem;
+}
+
+.fasilitas .container-yoga h3 {
+    padding-top: 2rem;
+    margin-left: 80rem;
+}
+
+.fasilitas .container-yoga .row .container-fas-yoga {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 3rem;
+    margin-right: 2.5rem;
+    text-align: right;
+}
+
+.fasilitas .container-yoga .row .fas-img img {
+    width: 720px;
+    height: 480px;
+    margin-right: 15rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* membership section */
+.membership {
+    padding-top: 14rem;
+}
+
+.membership h1{
+    text-align: center;
+    color: var(--bg);
+    padding-top: 3rem;
+}
+
+.membership .member {
+    min-height: 65vh;
+    background-image: url('img/memberbg.jpg');
+    background-size: cover;
+}
+.membership .member .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 1.3rem;
+}
+
+.membership .member .row .member-card .card1 {
+    background-color: rgba(255, 255, 255, 0.808);
+    width: 300px;
+    height: 500px;
+    border-radius: 5%;
+}
+
+.membership .member .row .member-card .card1 h1 {
+    padding-top: 45%;
+    
+}
+.membership .member .row .member-card .card1 h2 {
+    text-align: center;
+    padding-top: 45%;
+}
+.membership .member .row .member-card .card1 p {
+    text-align: center;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+/* footer section */
+.footer {
+    background-color: var(--secondary);
+    margin-bottom: 0;
+    margin-top: 10rem;
+    height: 70px;
+}
+
+.footer .social {
+    text-align: center;
+}
+
+.footer .social a{
+    color: var(--primary);
+    
+}
+/* media queries */
+/* laptop */
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+/* tablet */
+@media (max-width: 768px) {
+    html{
+        font-size: 62.5%;
+    }
+}
+/* Handphone */
+@media (max-width: 450px) {
+    html{
+        font-size: 55%;
+    }
+}
